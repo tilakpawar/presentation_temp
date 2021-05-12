@@ -13,7 +13,45 @@
 
       Thanks!
       -->
-     
+<style>
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: white;
+}
+
+.right {
+  right: 0;
+  background-color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 600;
+
+}
+</style>
+
+
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.6/dist/katex.min.css" integrity="sha384-81hI3kRV62VEhJBKVz7JsJzaUcP5Ty/E1FFdkLh6yz8uWthgdssaWCD1j8R1r2iU" crossorigin="anonymous">
 
     <!-- The loading of KaTeX is deferred to speed up page rendering -->
@@ -134,7 +172,7 @@
         <section class="fullscreen bg-white">
           <div class="card-50">
             <figure>
-              <img src="static/images/Eclipsing_binary_stars_ESO.jpeg" alt="Bonsai">
+              <img src="static/images/AstroLove.jpg" alt="Bonsai">
             </figure>
             <!-- end figure-->
             <div class="flex-content">
@@ -143,14 +181,44 @@
                     <use xlink:href="#fa-laptop"></use>
                   </svg>
                 </span>! <br> <br></strong></h2>
-              <p class="text-intro">What do I work on?... <br><br>It was the star-filled night sky that made me fall in love with astronomy. &#128301; <br> I study these objects trying to decipher the story of their life.<br> My research is focused on the study of eclipsing binary stellar systems.</p>
+              <p class="text-intro">
+
+                <li>It was the beautiful starry night sky that made me fall in love with astronomy.<b> &#128301; </b><br><br> </li> <li>I study these objects trying to decipher the story of their life.<br><br></li> <li> My research is focused on the study of <b>binary stellar systems</b>.</li>
+
+              </p>
               
               <p class="text-symbols">* * *</p>
             </div>
             <!-- end .flex-content-->
           </div>
         </section>
+
+<!-- Slide 02.1  #####################################  Slide 02.1 -->
+
         
+        <section class="fullscreen bg-white">
+          <div class="card-50">
+            <figure>
+              <img src="static/images/Orbit2.gif" alt="Bonsai">
+            </figure>
+            <!-- end figure-->
+            <div class="flex-content">
+              <h2><strong>Wait, stars have companions too                 <span>
+                  <svg class="fa-star">
+                    <use xlink:href="#fa-star"></use>
+                  </svg>
+                </span>? <br> <br></strong></h2>
+              <p class="text-intro">
+
+                <li>YES. more than half of them come in pairs (or multiplets). &#11088;&#11088; <br><br> </li> <li>They come in different shapes, sizes and configurations.<br><br></li> <li> I dive deeper into the world of <b>'Eclipsing Binaries'</b>.</li>
+
+              </p>
+              
+              <p class="text-symbols">* * *</p>
+            </div>
+            <!-- end .flex-content-->
+          </div>
+        </section>        
         
 <!-- Slide 02.25  #####################################  Slide 02.25 -->
 
@@ -174,21 +242,23 @@
       
 <!-- Slide 02.5  #####################################  Slide 02.5 -->
 
-        <section class="fullscreen bg-white">
-          <div class="card-50">
-           <video autoplay loop muted poster="EBvideo">
-              <source src="static/videos/eso1311b.mp4" type="video/mp4">
-           </video>
-            <!-- end figure-->
-            <div class="flex-content">
-              <h2><strong>Eclipsing Binaries, huh, what are those? &#129300;...</strong> <br><br></h2>
-              <p class="text-intro">\( \frac{v_{r2}}{v_{r1}} = \frac{M_{1}}{M_{2}} \) <br> \( M_1 + M_2 = \frac{P}{2 \pi G} \frac{(v_1 + v_2)^3}{sin^3 i} \) <br>Explaining Eclipsing Binaries...</p>
-              <p class="text-symbols">* * *</p>
-            </div>
-            <!-- end .flex-content-->
-          </div>
-        </section>
-       
+<section>
+
+<div class="split left">
+  <div class="centered">
+    <img width="650" src="static/images/NN_Serpentis_eclipsing_binary_star_system.gif" alt="Avatar woman">
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+<video autoplay loop muted poster="EBvideo">
+<source src="static/videos/eso1311b.mp4" type="video/mp4">
+</video>
+  </div>
+</div>
+
+</section>
 
 <!-- Slide 03  #####################################  Slide 03 -->
 
