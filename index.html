@@ -49,6 +49,12 @@
   padding: 5px;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  
 </style>
 
 
@@ -255,42 +261,41 @@
 <div class="split right">
   <div class="centered">
 <video width="450" autoplay loop muted poster="EBvideo">
-<source src="static/videos/eso1311b.mp4" type="video/mp4">
+<source src="static/images/eso1311b.gif" type="video/mp4">
 </video>
   </div>
 </div>
 
 </section>
 
-
 <section>
-
-<div class="column">
+  <div class="row">
+  <div class="column">
     <h2>Photometry</h2>
-    <img src="static/images/NN_Serpentis_eclipsing_binary_star_system.gif" alt="Avatar woman">
-</div>
-
-<div class="column">
+    <img src="static/images/Eclipsing_binary_stars_ESO.jpeg" alt="ESO" style="width:100%">
+  </div>
+  <div class="column">
     <h2>Spectroscopy</h2>
-<img src="static/images/eso1311b.gif">
+    <img src="static/images/doppler.gif" alt="Spectro" style="width:100%">
+  </div>
 </div>
-
 </section>      
-      
 <!-- Slide 02.75  #####################################  Slide 02.75 -->
 
 <section>
 
-<div class="column">
+  <div class="row">
+  <div class="column">
     <h2>Photometry</h2>
-    <img src="static/images/Eclipsing_binary_stars_ESO.jpeg">
-</div>
-
-<div class="column">
+    <img src="static/images/Eclipsing_binary_stars_ESO.jpeg" alt="ESO" style="width:100%">
+  </div>
+  <div class="column">
     <h2>Spectroscopy</h2>
-<img src="static/images/doppler.gif">
+    <img src="static/images/doppler.gif" alt="Spectro" style="width:100%">
+  </div>
 </div>
-
+  
+  
 </section>
 <!-- Slide 03  #####################################  Slide 03
 
