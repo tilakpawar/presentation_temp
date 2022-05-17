@@ -1,0 +1,1 @@
+### This repository is meant to serve as a testing space for all the presentations that I will need to make in the course of my PhD, or in the future. Working with html to create presentations is real fun. The templates on 'webslides' have proved to be extremely helpful.
