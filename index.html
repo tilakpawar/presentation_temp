@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+      -->
+<style>
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: white;
+}
+
+.right {
+  right: 0;
+  background-color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+  
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  padding: 5px;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  
+</style>
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.6/dist/katex.min.css" integrity="sha384-81hI3kRV62VEhJBKVz7JsJzaUcP5Ty/E1FFdkLh6yz8uWthgdssaWCD1j8R1r2iU" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.6/dist/katex.min.js" integrity="sha384-8swauRFcjK634lyiWVXOA0GdycMCzfbC+6qXGQroVKYve7SFHawYjryBtaLve4xl" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.6/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+   
+    
+    <!-- SEO -->
+    <title>Tilak Pawar</title>
+    <meta name="description" content="WebSlides is the easiest way to create HTML presentations and landings. 120+ free slides ready to use.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/permalink"> <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WebSlides Landings: Create your web presence easily"> <!-- EDIT -->
+    <meta property="og:description" content="Create simple, beautiful landing pages with WebSlides. 120+ free slides ready to use."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T16:54:27"> <!-- EDIT -->
+    <meta property="og:image" content="static/images/share-webslides.jpg" > <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://twitter.com/tilakpawar1"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides Landings: Create your web presence easily"> <!-- EDIT -->
+    <meta name="twitter:description" content="mytwitterpage."> <!-- EDIT -->
+    <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="../index.html" title="WebSlides">WebSlides</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/tilakpawar" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>WebSlides</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/tilakpawar1" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@WebSlides</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+<!-- Slide 01  #####################################  Slide 01 -->
+
+        
+        <section class="fullscreen bg-white">
+          <div class="card-50">
+            <figure>
+              <img src="static/images/Photo.jpg" alt="Bonsai">
+            </figure>
+            <!-- end figure-->
+            <div class="flex-content">
+              <h2><strong>Hello!</strong> <br> <br></h2>
+              <p class="text-intro">My name is Tilak and I am a student at the GeoPlanet doctoral school... <br>In case you are wondering what I look like, here's me on the left. &#128556; <br> I work in the stellar astrophysics group in Toru&nacute;. <br> <br> My interests other than astronomy are listening music and playing guitar, travelling and being nerdy about music gear (any audiophiles in the house?<svg class="fa-music">
+                <use xlink:href="#fa-music"></use>
+              </svg> ).</p>
+            <!--  <p>In case you are wondering what I look like, here's me on the left. &#128556;<br> I work in the stellar astrophysics group in Toru&nacute;.</p> -->
+              <p class="text-symbols">* * *</p>
+            </div>
+            <!-- end .flex-content-->
+          </div>
+        </section>
+
+
+
+<!-- Slide 02  #####################################  Slide 02 -->
+
+<!-- Slide 02.1  #####################################  Slide 02.1 -->
+
+        
+        <section class="fullscreen bg-white">
+          <div class="card-50">
+            <figure>
+              <img src="static/images/Orbit2.gif" alt="Bonsai">
+            </figure>
+            <!-- end figure-->
+            <div class="flex-content">
+              <h2><strong>Wait, stars have companions too?<span>
+                  <svg class="fa-star">
+                    <use xlink:href="#fa-star"></use>
+                  </svg>
+                </span><br> <br></strong></h2>
+              <p class="text-intro">
+
+                <li>YES. more than half of them come in pairs (or multiplets). &#11088;&#11088; <br><br> </li> <li>They come in different shapes, sizes and configurations.<br><br></li> <li> I dive deeper into the world of <b>'Eclipsing Binaries'</b>.</li>
+
+              </p>
+              
+              <p class="text-symbols">* * *</p>
+            </div>
+            <!-- end .flex-content-->
+          </div>
+        </section>        
+        
+<!-- Slide 02.25  #####################################  Slide 02.25 -->
+
+        
+        <section class="fullscreen bg-white">
+          <div class="card-50">
+            <figure>
+              <img src="static/images/Eclipsing_binary_stars_ESO.jpeg" alt="Bonsai">
+            </figure>
+            <!-- end figure-->
+            <div class="flex-content">
+              <h2><strong>Eclipsing Binaries (EBs), huh, what are those? &#129300;...</strong> <br><br></h2>
+              <p class="text-intro">EBs are two stars revolving around their common center of mass such that their orbit lie in a plane containing our line of sight. <br> 
+              </p>
+              <p class="text-symbols">* * *</p>
+            </div>
+            <!-- end .flex-content-->
+          </div>
+            <!-- end .flex-content-->
+          </div>
+        </section>
+      
+<!-- Slide 02.5  #####################################  Slide 02.5 -->
+
+          <section class="fullscreen bg-black aligncenter">
+         <div class="embed">
+           <video autoplay loop muted poster="static/videos/eso1311b.mp4">
+             <source src="static/videos/eso1311b.mp4" type="video/mp4">
+           </video>
+          </div><!-- .end .embed -->
+          <!-- .wrap = container (width: 90%) -->
+        </section>
+<!-- Slide 02.75  #####################################  Slide 02.75 -->
+        
+        
+        <section class="fullscreen bg-white">
+          <div class="card-50">
+            <figure>
+              <img src="static/images/Binary_Love.png" alt="Bonsai">
+            </figure>
+            <!-- end figure-->
+            <div class="flex-content">
+              <h3><strong>Why is it important to study these stars? <br><br>
+              <ul style="font-size: 25px">
+               <li>Mass</li>
+               <li>Radii</li>
+               <li>T_eff</li>
+               <li>Surface gravity (g)</li>
+               <li>Chemical abundances</li>
+              </ul>
+              <br>
+               Why do we care?</strong> <br><br></h3>
+              <p class="text-intro"></p>
+              <p class="text-symbols"></p>
+            </div>
+            <!-- end .flex-content-->
+          </div>
+            <!-- end .flex-content-->
+          </div>
+        </section>
+<!-- Slide 03  #####################################  Slide 03
+
+        <section>
+          .wrap = container (width: 90%)
+          <div class="wrap size-60">
+            <center> <h3><strong>Why study eclipsing binaries?</strong> <br>What's so special about them.</h3> </center>
+            <hr>
+            <div class="bg-white shadow">
+              <ul class="flexblock reasons">
+                <li>
+                  <h2>Spectroscopy.</h2>
+                  <p style="font-size=30px">\( \frac{v_{r2}}{v_{r1}} = \frac{M_{1}}{M_{2}} \) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( M_1 + M_2 = \frac{P}{2 \pi G} \frac{(v_1 + v_2)^3}{sin^3 i} \)</p> -->
+                 <!-- <p>\( M_1 + M_2 = \frac{P}{2 \pi G} \frac{(v_1 + v_2)^3}{sin^3 i} \)</p> -->
+              <!--  </li> -->
+                
+              <!--  <li>
+                  <h2>Photometry.</h2>
+                  <p>Radii, fluxes etc.</p>
+                </li>
+
+              
+                <li>
+                  <h2>The power of SB2 eclipsing binary systems.</h2>
+                  <p>Complete solution of the system, distance estimator.</p>
+                </li>
+              </ul>
+            </div>  .end .bg-white shadow -->
+        <!--  </div>
+        </section> -->
+
+<!-- Slide 04  #####################################  Slide 04 -->
+<!--
+<section>
+          <div class="wrap">
+            <h3>ul.flexblock.steps</h3>
+            <ul class="flexblock steps">
+             li>a? Add blink = <ul class="flexblock steps blink">-->
+<!--              <li>
+                <span>
+                  <svg class="fa-star-o">
+                    <use xlink:href="#fa-star-o"></use>
+                  </svg>
+                </span>
+                <h2>01. Passion</h2>
+                <p>When you're really passionate about your job, you can change the world.</p>
+              </li>
+              <li>
+                <div class="process step-2"></div>
+                <span>
+                  <svg class="fa-laptop">
+                    <use xlink:href="#fa-laptop"></use>
+                  </svg>
+                </span>
+                <h2>02. Purpose</h2>
+                <p>Why does this business exist? How are you different? Why matters?</p>
+              </li>
+              <li>
+                <div class="process step-3"></div>
+                <span>
+                  <svg class="fa-coffee">
+                    <use xlink:href="#fa-coffee"></use>
+                  </svg>
+                </span>
+                <h2>03. Principles</h2>
+                <p>Leadership through usefulness, openness, empathy, and good taste.</p>
+              </li>
+              <li>
+                <div class="process step-4"></div>
+                <span>
+                  <svg class="fa-newspaper-o">
+                    <use xlink:href="#fa-newspaper-o"></use>
+                  </svg>
+                </span>
+                <h2>04. Process</h2>
+                <ul>
+                  <li>Useful</li>
+                  <li>Easy</li>
+                  <li>Fast</li>
+                  <li>Beautiful</li>
+                </ul>
+              </li>
+            </ul>
+          </div> -->
+          <!-- .end .wrap -->
+<!--        </section> -->
+
+
+<!-- Slide 05  #####################################  Slide 05 -->
+      <section>
+
+        <div class="split left">
+        <div class="centered">
+          <img src="static/images/Active_Sun.gif" alt="Avatar woman">
+          <br><br>
+          <h2>Present Scenario</h2>
+        </div>
+      </div>
+
+      <div class="split right">
+        <div class="centered">
+          <img src="static/images/Dying_Sun.png" alt="Avatar man">
+          <br><br>
+          <h2>What is the expiry date?</h2>
+        </div>
+      </div>
+
+      </section>
+
+
+<!-- Slide 06  #####################################  Slide 06 -->
+
+<!--        <section class="fullscreen bg-black aligncenter">
+         <div class="embed dark">
+           <video autoplay loop muted poster="static/videos/dailyworkcode.mp4">
+              <source src="static/videos/dailyworkcode.mp4" type="video/mp4">
+           </video> -->
+        <!--  </div> .end .embed -->
+          <!-- .wrap = container (width: 90%) -->
+<!--          <div class="wrap">
+            <h2><strong>How is a normal day at work like?</strong>
+             <br> <br> Usually it's either data reduction or modelling and analysing the reduced data. <br> Obtaining results, rechecking them, make necessary changes annnnnd repeat! </h2>
+          </div>
+           .end .wrap -->
+<!--        </section> -->
+
+<!-- Slide 07  #####################################  Slide 07 -->
+
+
+
+
+ <!--       <section class="fullscreen bg-black aligncenter">
+         <div class="embed">
+           <video autoplay loop muted poster="static/videos/palm_reading.mp4">
+              <source src="static/videos/palm_reading.mp4" type="video/mp4">
+           </video> 
+          </div> .end .embed -->
+          <!-- .wrap = container (width: 90%) -->
+ <!--         <div class="wrap">
+            <h2><strong>Unusual days?</strong>
+             <br> Some days are spent in explaining people that astronomy is not equivalent to astrology and that I cannot read their palm and tell the future... &#128560;</h2>
+          </div>
+           .end .wrap --> -->
+ <!--       </section> -->
+
+<!-- Slide 08  #####################################  Slide 08 -->
+
+
+        <section class="fullscreen bg-black aligncenter">
+         <div class="embed dark">
+           <video autoplay loop muted poster="static/videos/palm_reading.mp4">
+             <source src="static/videos/palm_reading.mp4" type="video/mp4">
+           </video>
+          </div><!-- .end .embed -->
+          <!-- .wrap = container (width: 90%) -->
+          <div class="wrap">
+            <h2><strong>As I already mentioned...</strong>
+             <br><br> Some days are spent in explaining people that astronomy is not equivalent to astrology and that I cannot read their palm and tell the future... &#128560;</h2>
+          <!-- .end .wrap -->
+        </section>
+
+
+<!-- Slide 09  #####################################  Slide 09 -->
+
+        <section>
+          <div class="wrap aligncenter fadeInUp">
+            <h2>And... That's me :)</h2>
+            <p>Thanks for listening patiently.</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+<!-- End The Document  #####################################  End The Document -->
+
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+  </body>
+</html>
